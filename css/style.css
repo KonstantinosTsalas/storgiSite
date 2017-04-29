@@ -88,7 +88,7 @@ hr{
 	background:transparent;
 	text-align:center;
 	border:none;}
-.well h3{
+.wellHeading{
 	font-size:1.1em;
 	background-color:#c4191f;
 	color:#fff;
@@ -97,6 +97,16 @@ hr{
 	line-height:35px;
 	margin:0 auto;
 	border-radius:5px;}
+.commentsHeading h4{
+	background-color:#c4191f;
+	color:#fff;
+	width:12%;
+	text-align:center;
+	height:35px;
+	line-height:35px;
+	border-radius:5px;}
+#leaveComment{
+	width:40%;}
 .a-btn {
 	margin-top:10px;}	
 .a-btn a{
@@ -113,3 +123,47 @@ hr{
 	background:#c4191f;
 	color:#fff;
 	border:none;}
+@media (max-width:1200px){
+#leaveComment{
+	width:50%;}
+}
+@media (max-width:768px){
+.commentsHeading h4 {
+	width: 25%;
+}
+}
+@media (max-width:640px){
+.commentsHeading h4 {
+	width: 35%;
+	font-size: 13px;
+}
+#leaveComment{
+	width:50%;}
+
+}
+}
+@media (max-width:480px){
+.commentsHeading h4 {
+	width: 40%;
+	font-size: 12px;
+}
+
+
+
+}
+
+
+
+
+@media (max-width:320px){
+.commentsHeading h4 {
+	width: 65%;
+	font-size: 11px;
+}
+#leaveComment{
+	width:70%;}
+
+}
+
+
+
