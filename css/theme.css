@@ -93,6 +93,30 @@ footer .row{
 	color:#828282;
 	font-weight:bold;
 	font-size:0.8em;}
-/*.text {
-	font-family:minionPro;
-}*/
+	
+/* accordion */
+#accordion div {
+	display:none;}
+#accordion h3{
+	padding:5px 0 5px 10px;
+	background-color:#CE585C;
+	border-radius:10px;}
+#accordion h3:hover{
+	cursor:pointer;}
+#accordion div {
+	padding:10px 0 10px 20px;}
+.rotate {-moz-transform: rotate(180deg);
+         -webkit-transform:rotate(180deg); 
+         -ms-transform:rotate(180deg);
+         -o-transform:rotate(180deg);
+         }
+
+/*  table */
+table {
+	width:100%;}
+th,td{
+	height:50px;
+	font-size:1.2em;
+	border-bottom:1px solid #999;}
+
+	
