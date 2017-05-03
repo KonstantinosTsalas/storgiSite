@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/theme.css">
 <title>Δωρεές</title>
  
 </head>
 
 <body>
+
+	<!-- header & navigation -->
 	<header>
     	<div class="nav navbar-default navbar-static-top">
         	<div class="container">
@@ -38,12 +38,15 @@
         </div>
     </header>
     
+    <!-- main section -->
     <section>
     	<div class="container">
         	<h1 style="text-align:center;padding-top:20px;">Η <strong>στοργή</strong> στηρίζεται αποκλειστικά στις χορηγίες σε είδος ή οικονομικές των επιχειρήσεων καθώς και στις δωρεές των ιδιωτών.</h1>
             <br><br>
         	<p class="text">Η <strong>στοργή</strong> είναι ένας μη κερδοσκοπικός οργανισμός που προσπαθεί να δώσει ένα χέρι βοηθείας στους πρόσφυγες που φτάνουν στην Ελλάδα κατατρεγμένοι απο τον πόλεμο.Η δράση του οργανισμού βασίζεται στη συμμετοχή των εθελοντών και στηρίζεται στις δωρεές των χιλιάδων επώνυμων και ανώνυμων φίλων. Η <strong>στοργή</strong> βρίσκεται δίπλα στους πρόσφυγες παρέχοντας υλική και  ψυχολογική υποστήριξη. Στηρίξτε την προσπάθεια της <strong>στοργής</strong> και μαζί τους πρόσφυγες και τα παιδιά τους...</p>
             <h2>Μπορείτε να στηρίξετε τη <strong>στοργή</strong> με τους παρακάτω τρόπους:</h2>
+            
+            <!-- accordion -->
             <div class="col-xs-12" id="accordion">
             	<h3>Μέσω Internet <span class="pull-right" style="padding-right:10px;"><i class="fa fa-angle-down"></i></span></h3>
                 <div>
@@ -56,10 +59,22 @@
                     <p class="text">
                     	Χρηματική δωρεά μέσω PayPal με τη μεταφορά ποσού από τον λογαριασμό σας σε λογαριασμό του Συλλόγου
                     </p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_donations">
+                        <input type="hidden" name="business" value="it0631@uom.edu.gr">
+                        <input type="hidden" name="lc" value="GR">
+                        <input type="hidden" name="item_name" value="Storgi - Support & Help The Refugees">
+                        <input type="hidden" name="no_note" value="0">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
                 </div>
                 <h3>Με Τραπεζική Κατάθεση <span class="pull-right" style="padding-right:10px;"><i class="fa fa-angle-down"></i></span></h3>
-                <div>
-                	<table class="text">
+                <div class="table-responsive">
+                	<table class="text table">
                     	<tr>
                         	<th>Τράπεζες</th>
                             <th>Αριθμός Λογαριασμού</th>
@@ -108,7 +123,7 @@
     
     
     
-   
+   <!-- footer -->
      <footer>
     	<div class="container">
         	<div class="row">
