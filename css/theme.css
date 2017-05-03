@@ -9,9 +9,6 @@
 	font-family:garamond;
 	src:url(../fonts/GARA.TTF);
 	}
-@font-face{
-	font-family:miamaCal;
-	src:url(../fonts/miama.otf);}
 	
 	
 html{
@@ -26,9 +23,6 @@ body {
 	line-height: 1.6em;
 	color: #656565;
 	}
-
-
-	
 /* navbar styles */
 .navbar-default a {
 	margin-left:2px;
@@ -37,6 +31,12 @@ body {
 .navbar-collapse{
 	text-align:right;
 	}
+.nav {
+	font-size:16px;
+	padding-bottom:8px;
+}
+.navbar-header img{
+	padding-top:10px;}
 /*body a {
     transition: 0.3s all ease;
     -webkit-transition: 0.3s all ease;
@@ -97,6 +97,8 @@ footer {
 /* links,headings,rows and columns */
 a, a:hover{
 	text-decoration:none;}
+ a:hover{
+	color:#A01E22;}
 h1,h2,h3,h4,h5{
 	color:#000;
 	font-family:garamond;
@@ -186,11 +188,6 @@ hr{
 	
 	
 /* about page,portfolio styles */	
-#brand{
-	font-family:miamaCal;
-	font-size:2.1em;}
-.midLet{
-	color:#CA3D4E;}
 .leftImg{
 	float:left;
 	margin:0 25px 15px 0;}
@@ -213,9 +210,22 @@ hr{
 .modal-content{
 	margin:0 auto;
 	max-width:1200px;}
-.about{
+.aboutCol{
 	margin-bottom:100px;
-	margin-top:30px;}
+	margin-top:30px;
+	clear:both;}
+.h3Red{
+	font-size: 1.1em;
+	background-color: #C4191F;
+	text-align:center;
+	color:#fff;
+	/*width:12%;*/
+	height:35px;
+	line-height:35px;
+	border-radius:5px;
+	display:inline-block;
+	padding:0 15px;}
+
 
 
 
@@ -236,9 +246,8 @@ hr{
 	border-right:1px solid #000;
 }
 .contact{
-	
 	text-align:center;}
-.form h3{
+.formHeading{
 	text-align:center;}
 
 
@@ -249,20 +258,21 @@ hr{
 	text-align:center;
 	border:none;}
 .wellHeading{
-	font-size:1.1em;
-	background-color:#c4191f;
-	color:#fff;
-	width:180px;
-	height:35px;
-	line-height:35px;
-	margin:0 auto;
-	border-radius:5px;}
+	font-size: 1.1em;
+	background-color: #C4191F;
+	color: #fff;
+	width: 180px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
 
 
 	
 /* comments styles */
 .commentsHeading h4{
-	background-color:#c4191f;
+	background-color: #C4191F;
 	color:#fff;
 	width:12%;
 	text-align:center;
@@ -288,7 +298,7 @@ hr{
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;}
 .a-btn a:hover {
-	background:#c4191f;
+	background:#C4191F;
 	color:#fff;
 	border:none;}
 	

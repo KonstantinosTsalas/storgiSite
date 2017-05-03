@@ -30,7 +30,7 @@ if(isset($_POST['email'])){
     	<div class="nav navbar-default navbar-static-top">
         	<div class="container">
             	<div class="navbar-header">
-                	<a class="navbar-brand" href="index.html"><img src="img/storgh-logo.png"  alt="storgi-logo" width="253" height="108"></a>
+                	<a class="" href="index.html"><img src="img/storgh-logo.png"  alt="storgi-logo"></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -49,9 +49,10 @@ if(isset($_POST['email'])){
             </div>
         </div>
     </header>
+    <br><br>
+    
+    <!-- main section -->
     <section>
-    
-    
         <div class="container">
         	<!-- Google Maps -->
         	<div class="row">
@@ -61,10 +62,9 @@ if(isset($_POST['email'])){
             </div>
             
             <!-- Contact Form -->
-            
             <div class="row">
             	<div class="col-sm-12 col-md-6 form">
-                	<h3>Αποστολή μηνύματος</h3>
+                	<div class="formHeading"><h3 class="h3Red h3Form">ΑΠΟΣΤΟΛΗ ΜΗΝΥΜΑΤΟΣ</h3></div><br>
                 	<form id="contactForm" action="contact.php" method="post" onsubmit="return validateForm()" novalidate>
                     	<div class="form-group">
                         	<label for="nameInput">Όνομα*</label>
@@ -90,7 +90,7 @@ if(isset($_POST['email'])){
                     </form>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 contact">
-                	<h3>Επικοινωνία</h3><br>
+                	<h3 class="h3Red">ΕΠΙΚΟΙΝΩΝΙΑ</h3><br><br>
                     <div class="row">
                     	<div class="col-sm-6">
                         	<h4 class="mainAdd">Τρίκαλα(κεντρικά)</h4>
