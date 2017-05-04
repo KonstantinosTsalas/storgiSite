@@ -22,20 +22,27 @@ body {
 	font-weight: 300;
 	line-height: 1.6em;
 	color: #656565;
-	}
+}
+
+
 /* navbar styles */
 .navbar-default a {
 	margin-left:2px;
 	font-weight:bold;
 	}
 .navbar-collapse{
-	text-align:right;
+	text-align:center;
 	}
 .nav {
-	font-size:16px;
-	padding-bottom:8px;
+	font-size:18px;
 }
-.navbar-header img{
+#mainNavbar{
+	text-align:center;
+	margin-top:15px;}
+ul.nav {
+	display:inline-block;
+	margin:0 auto;}
+ul.nav li {
 	padding-top:10px;}
 /*body a {
     transition: 0.3s all ease;
