@@ -91,13 +91,13 @@ footer {
 	width:100%;
 	height:60px;
 	padding-top:20px;
-	background-color:#FAFAFA;
+	background-color:#FFF;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border-color: #e7e7e7;
-	border-width: 0 0 1px;
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);}
+	box-sizing: border-box;}
+footer .row div:first-child{
+	height:30.2px;
+	line-height:30.2px;}
 	
 	
 	
@@ -204,7 +204,7 @@ hr{
 #aboutText{
 	margin-top:30px;}
 .stuff{
-	max-width:350px;
+	max-width:380px;
 	height:400px;
 	margin:30px auto;
 	text-align:center;

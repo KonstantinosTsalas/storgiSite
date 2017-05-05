@@ -19,39 +19,40 @@ if(isset($_POST['email'])){
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
 <title>Επικοινωνία</title>
 </head>
 
 <body>
 
-	<!-- Header -->
-	<header>
+<!-- header & navigation -->
+<header>
     	<div class="nav navbar-default navbar-static-top">
-        	<div class="container">
-            	<div class="navbar-header">
-                	<a class="navbar-brand" href="index.html"><img src="img/storgh-logo.png"  alt="storgi-logo" width="253" height="108"></a>
+        	<div class="container" style="text-align:center;">
+            <div style="margin-top:15px;">
+                	<a class="" href="index.html"><img src="img/storgh-logo.png"  alt="storgi-logo"></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                </div>
+              </div>
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                	<ul class="nav navbar-nav navbar-right">
-                    	<li><a href="index.html">ΑΡΧΙΚΗ</a></li>
-                        <li><a href="about.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+                	<ul class="nav navbar-nav">
+                	  <li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+                	  <li><a href="about.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
                         <li><a href="events.html">ΕΚΔΗΛΩΣΕΙΣ</a></li>
                         <li><a href="donations.html">ΔΩΡΕΕΣ</a></li>
-                        <li class="active"><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                        <li  class="active"><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <br><br>
+    
+    <!-- main section -->
     <section>
-    
-    
         <div class="container">
         	<!-- Google Maps -->
         	<div class="row">
@@ -61,10 +62,10 @@ if(isset($_POST['email'])){
             </div>
             
             <!-- Contact Form -->
-            <h2>Φόρμα Επικοινωνίας</h2>
             <div class="row">
-            	<div class="col-sm-12 col-md-6">
-                	<form id="contactForm" action="contact.php" method="post" onsubmit="return validateForm()">
+            	<div class="col-sm-12 col-md-6 form">
+                	<div class="formHeading"><h3 class="h3Red h3Form">ΑΠΟΣΤΟΛΗ ΜΗΝΥΜΑΤΟΣ</h3></div><br>
+                	<form id="contactForm" action="contact.php" method="post" onsubmit="return validateForm()" novalidate>
                     	<div class="form-group">
                         	<label for="nameInput">Όνομα*</label>
                             <input type="text" class="form-control" id="nameInput" name="name" placeholder="Όνομα">
@@ -87,6 +88,26 @@ if(isset($_POST['email'])){
                         </div>
                         <button type="submit" name="submit" class="btn btn-default pull-right">Αποστολή</button>
                     </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 contact">
+                	<h3 class="h3Red">ΕΠΙΚΟΙΝΩΝΙΑ</h3><br><br>
+                    <div class="row">
+                    	<div class="col-sm-6">
+                        	<h4 class="mainAdd">Τρίκαλα(κεντρικά)</h4>
+                            <p>Ασκληπειού 35</p>
+                            <p>42100</p>
+                            <p><strong>ΤΗΛ: </strong> 24310 55889</p>
+                            <p><strong>email: </strong> storgiTrikala@gmail.com</p>
+                        </div>
+                        <div class="col-sm-6">
+                        	<h4 class="mainAdd">Καρδίτσα</h4>
+                            <p>Πηνειού 22</p>
+                            <p>43131</p>
+                            <p><strong>ΤΗΛ: </strong> 24410 66889</p>
+                            <p><strong>email: </strong> storgiKarditsa@gmail.com</p>
+                        </div>
+                    </div>
+                     
                 </div>
             </div>
         </div>
@@ -114,12 +135,11 @@ if(isset($_POST['email'])){
     </footer>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
   <script>
 		function myMap() {
-			var startLoc = {lat:39.555897, lng: 21.768257};
+			var startLoc = {lat:39.549349, lng: 21.764898};
 			var map = new google.maps.Map(document.getElementById('map'),{
-				zoom:12,
+				zoom:14,
 				center:startLoc
 				});
 			var marker = new google.maps.Marker ({
@@ -130,6 +150,7 @@ if(isset($_POST['email'])){
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzeSfm4Kab8nNJdSEdTEQqDsRemczF5wg&callback=myMap"></script>
   <script src="js/validation.js"></script>
+  <script src="js/responsive.js"></script>
 
 
 </body>
