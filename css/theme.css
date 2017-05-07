@@ -10,7 +10,7 @@
 	src:url(../fonts/GARA.TTF);
 	}
 	
-	
+/* html& body */	
 html{
 	position:relative;
 	min-height:100%;}
@@ -84,7 +84,6 @@ footer {
 	width:100%;
 	height:60px;
 	padding-top:20px;
-	/*padding-bottom:60px;*/
 	z-index:1000000000000;
 	background-color:#FFF;
 	-webkit-box-sizing: border-box;
@@ -307,6 +306,10 @@ th,td{
 .row:nth-child(2) .commentsHeading h4{
 		width:50%;}
 	}
+@media (max-width:1024px){
+	.aboutCol img{
+		max-width:280px;}
+}
 @media (max-width:991px){
 .form{
 	border-right:none;}	
@@ -318,7 +321,9 @@ th,td{
 	margin:0 auto;}
 .row:nth-child(2) .commentsHeading h4{
 		width:35%;}
-	
+.aboutCol img{
+		max-width:none;}
+
 }
 @media (max-width:768px){
 .commentsHeading h4 {
