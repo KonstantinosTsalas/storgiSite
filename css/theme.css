@@ -140,6 +140,8 @@ footer .row{
 	width:80%;}
 #accordion div {
 	display:none;}
+#accordion h3 span{
+	float:right;}
 #accordion h3{
 	height:50px;
 	line-height:50px;
@@ -379,6 +381,38 @@ th,td{
 }
 
 
-
-
-	
+/* media queries for accordion */
+@media (max-width:460px){
+	#accordion h3 {
+		height:40px;
+		line-height:40px;
+		font-size:1.4em;}
+	}
+@media (max-width:390px){
+	#accordion h3 {
+		padding:0 0 0 10px;
+		height:35px;
+		line-height:35px;
+		font-size:1.3em;
+		border-radius:8px;}
+	}
+@media (max-width:365px){
+	#accordion h3 {
+		height:30px;
+		line-height:30px;
+		font-size:1.2em;
+		border-radius:6px;}
+	}
+@media (max-width:343px){
+	#accordion h3 {
+		height:25px;
+		line-height:25px;
+		font-size:1.1em;
+		border-radius:5px;}
+	}
+@media (max-width:320px){
+	#accordion h3 {
+		height:20px;
+		line-height:20px;
+		font-size:1em;}
+	}
