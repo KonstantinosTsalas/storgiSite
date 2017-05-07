@@ -302,6 +302,10 @@ th,td{
 	
 	
 /* media queries */
+@media(max-width:1216px){
+footer{
+		height:80px;}
+	}
 @media(max-width:1199px){
 .row:nth-child(2) .commentsHeading h4{
 		width:50%;}
@@ -323,6 +327,8 @@ th,td{
 		width:35%;}
 .aboutCol img{
 		max-width:none;}
+.stuff{
+	float:none !important;}
 
 }
 @media (max-width:768px){
