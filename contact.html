@@ -1,14 +1,13 @@
 <?php 
 if(isset($_POST['email'])){
-    $to = "it0631@uom.edu.gr"; // this is your Email address
-    $from = $_POST['email']; // this is the senders Email address
+    $to = "it0631@uom.edu.gr"; 
+    $from = $_POST['email'];   
     $name = $_POST['name'];
     $subject =$_POST['subject'];
     $message = $_POST['message'];
 
 	$headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
 <!doctype html>
@@ -26,7 +25,7 @@ if(isset($_POST['email'])){
 <body>
 
 <!-- header & navigation -->
-<header>
+<header id="home">
     	<div class="nav navbar-default navbar-static-top">
         	<div class="container" style="text-align:center;">
             <div style="margin-top:15px;">
@@ -111,6 +110,7 @@ if(isset($_POST['email'])){
                 </div>
             </div>
         </div>
+        <a href="#home" style="font-size:17px;font-weight:bold;color:#C4191F;float:right;">Πάνω <img src="img/upBtn.png"></a>
     </section>
     
     

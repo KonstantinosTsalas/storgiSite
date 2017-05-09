@@ -26,7 +26,7 @@ if(isset($_POST['email'])){
 <body>
 
 <!-- header & navigation -->
-<header>
+<header id="home">
     	<div class="nav navbar-default navbar-static-top">
         	<div class="container" style="text-align:center;">
             <div style="margin-top:15px;">
@@ -111,6 +111,7 @@ if(isset($_POST['email'])){
                 </div>
             </div>
         </div>
+        <a href="#home" style="font-size:17px;font-weight:bold;color:#C4191F;float:right;">Πάνω <img src="img/upBtn.png"></a>
     </section>
     
     
