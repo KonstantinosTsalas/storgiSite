@@ -169,6 +169,7 @@ th,td{
 /* carousel */	
 #myCarousel {
 	margin: 20px auto 50px;
+	width:1632px;
 	}
 .img-responsive,
 .thumbnail > img,
@@ -318,6 +319,15 @@ th,td{
 	
 	
 /* media queries */
+@media(max-width:1700px){
+	#myCarousel{
+		width:1445px;}}
+@media(max-width:1490px){
+	#myCarousel{
+		width:1266.5px;}}
+@media(max-width:1320px){
+	#myCarousel{
+		width:1122px;}}
 @media(max-width:1216px){
 footer{
 		height:80px;}
@@ -325,6 +335,8 @@ footer{
 @media(max-width:1199px){
 .row:nth-child(2) .commentsHeading h4{
 		width:50%;}
+#myCarousel{
+		width:1019px;}
 	}
 @media (max-width:1024px){
 	.aboutCol img{
@@ -346,6 +358,8 @@ footer{
 		max-width:none;}
 .stuff{
 	float:none !important;}
+#myCarousel{
+	width:100%;}
 
 }
 @media (max-width:768px){
