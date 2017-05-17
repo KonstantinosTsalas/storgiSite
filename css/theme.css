@@ -192,6 +192,28 @@ th,td{
 .carousel-inner {
    margin-bottom:50px;
 }
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-inner .item > img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
 
 /* about page,portfolio styles */	
 .leftImg{
@@ -225,7 +247,6 @@ th,td{
 	background-color: #C4191F;
 	text-align:center;
 	color:#fff;
-	/*width:12%;*/
 	height:35px;
 	line-height:35px;
 	border-radius:5px;

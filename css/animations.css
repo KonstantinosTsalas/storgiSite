@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes logo{
+	0%{transform:scale(0.8);}
+	50%{transform:scale(1.1);}
+	100%{transform:scale(1);}
+	}
+@keyframes li1 {
+			0%{transform:translateX(1000px); opacity:0; }
+			25%{transform:  translateX(750px) ; opacity:0.25;}
+			50%{transform:  translateX(500px) ; opacity:0.5;}
+			75%{transform: translateX(250px) ; opacity:0.75;}
+			100%{transform: translateX(0px) ; opacity:1;}
+	}
+@keyframes li2 {
+			0%{transform:translateX(1000px); opacity:0;}
+			50%{transform:  translateX(1000px) ; opacity:0;}
+			62.5%{transform: translateX(750px) ; opacity:0.25;}
+			75%{transform: translateX(500px) ; opacity:0.5;}
+			87.5%{transform: translateX(250px); opacity:0.75;}
+			100%{transform: translateX(0px); opacity:1;}
+	}
+@keyframes li3 {
+			0%{transform: translateX(1000px) ; opacity:0; }
+			66.666%{transform:  translateX(1000px) ; opacity:0;}
+			74.995%{transform:  translateX(750px) ; opacity:0.25;}
+			83.33%{transform:  translateX(500px) ; opacity:0.5;}
+			91.665%{transform:  translateX(250px) ; opacity:0.75;}
+			100%{transform:  translateX(0px) ; opacity:1;}
+	}
+@keyframes li4 {
+			0%{transform: translateX(1000px) ; opacity:0; }
+			75%{transform:  translateX(1000px) ; opacity:0;}
+			81.25%{transform: translateX(750px) ; opacity:0.25;}
+			87.5%{transform: translateX(500px) ; opacity:0.5;}
+			93.75%{transform: translateX(250px) ; opacity:0.75;}
+			100%{transform: translateX(0px) ; opacity:1;}
+	}
+	@keyframes li5 {
+			0%{transform: translateX(1000px) ; opacity:0; }
+			80%{transform:  translateX(1000px) ; opacity:0;}
+			85%{transform:  translateX(750px) ; opacity:0.25;}
+			90%{transform:  translateX(500px) ; opacity:0.5;}
+			95%{transform:  translateX(250px) ; opacity:0.75;}
+			100%{transform:  translateX(0px) ; opacity:1;}
+	}
+/*#home img{
+	animation-name:logo;
+	animation-duration:5s;
+	animation-timing-function:ease-in;
+	}*/
+	
+#home li:first-child {
+	animation-name: li1;
+     animation-duration: 0.4s;
+     animation-timing-function: linear;
+	}
+#home li:nth-child(2){
+	animation-name:li2;
+	animation-duration:0.8s;
+	animation-timing-function:linear;
+	}	
+#home li:nth-child(3){
+	animation-name:li3;
+	animation-duration:1.2s;
+	animation-timing-function:linear;
+	}	
+#home li:nth-child(4){
+	animation-name:li4;
+	animation-duration:1.6s;
+	animation-timing-function:linear;
+	}	
+#home li:nth-child(5){
+	animation-name:li5;
+	animation-duration:2s;
+	animation-timing-function:linear;
+	}	
+
